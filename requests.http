@@ -1,0 +1,69 @@
+### Check if API is alive
+GET http://localhost:8080/
+
+### Welcome
+GET http://localhost:8080
+
+### Register
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Rocky",
+  "lastName": "Vorhees",
+  "email": "friday@18th.org",
+  "password": "Bobobo"
+}
+
+### Register2
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Ove",
+  "lastName": "Vorhees",
+  "email": "friday@15th.org",
+  "password": "Bobobo"
+}
+
+### Login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "friday@18th.org",
+  "password": "Bobobo"
+}
+
+### Get Dashboard (Protected Route)
+GET http://localhost:8080/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmlkYXlAMTh0aC5vcmciLCJpYXQiOjE3NDAzMTc3NjMsImV4cCI6MTc0MDQwNDE2M30.mEey4SHO9Lg55ijiZpE4lbM6p6azPaVg8IJeDgcXfGk
+### Get All Users (Protected Route)
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmlkYXlAMTh0aC5vcmciLCJpYXQiOjE3NDAzMTc3NjMsImV4cCI6MTc0MDQwNDE2M30.mEey4SHO9Lg55ijiZpE4lbM6p6azPaVg8IJeDgcXfGk
+
+### Get User by ID (Protected Route)
+GET http://localhost:8080/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmlkYXlAMTR0aC5vcmciLCJpYXQiOjE3NDAzMTY0MTYsImV4cCI6MTc0MDQwMjgxNn0.yM6OUtRfnGYAKfZ17TObRxgqBAuR7qOutmRjQn0G6sk
+
+### Update User (Protected Route)
+PUT http://localhost:8080/users/1
+Authorization: Bearer your_jwt_token_here
+Content-Type: application/json
+
+{
+  "firstName": "Jasooon",
+  "lastName": "Vorheeees"
+}
+
+### Delete User (Protected Route)
+DELETE http://localhost:8080/users/1
+Authorization: Bearer Ur/7AGWghYdrjBLNIWJw6mLmlEh9lDsVzFlij9LoBCc=
+
+### First, login with Google
+GET http://localhost:8080/oauth2/authorization/google
+
+### After successful login, you'll get a JWT token
+### Use that token to access protected endpoints
+GET http://localhost:8080/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZGFuZHJlYXNzb25AbGl2ZS5jb20iLCJpYXQiOjE3NDAzMTgzNDIsImV4cCI6MTc0MDQwNDc0Mn0.ZzKljW5ZqQvZibsd3aY9cQppzv1ZhYD7R6k-sHoA1e8
