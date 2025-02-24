@@ -1,5 +1,4 @@
 package edu.campusmolndal.dto;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

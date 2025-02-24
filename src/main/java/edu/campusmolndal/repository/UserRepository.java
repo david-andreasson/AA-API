@@ -1,5 +1,4 @@
 package edu.campusmolndal.repository;
-
 import edu.campusmolndal.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;

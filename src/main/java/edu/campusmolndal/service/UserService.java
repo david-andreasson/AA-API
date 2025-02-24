@@ -1,5 +1,4 @@
 package edu.campusmolndal.service;
-
 import edu.campusmolndal.model.User;
 import edu.campusmolndal.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

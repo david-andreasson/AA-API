@@ -1,5 +1,4 @@
 package edu.campusmolndal.controller;
-
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

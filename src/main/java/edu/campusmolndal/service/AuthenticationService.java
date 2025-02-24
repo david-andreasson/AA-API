@@ -1,5 +1,4 @@
 package edu.campusmolndal.service;
-
 import edu.campusmolndal.dto.AuthenticationRequest;
 import edu.campusmolndal.dto.AuthenticationResponse;
 import edu.campusmolndal.dto.RegisterRequest;
